@@ -18,9 +18,9 @@ export let subtableAarraySort = aray => {
   });
   return aray;
 };
-// console.log(subtableAarraySort(subtable));
+console.log(subtableAarraySort(subtable));
 
-let subtableAarraySort2 = aray => {
+export let subtableAarraySort2 = aray => {
   aray.sort((a, b) => {
     // const aryA = a.date.split("-");
     // const aryB = b.date.split("-");

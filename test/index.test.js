@@ -1,5 +1,5 @@
 // const index = require("../src/index.js");
-import { subtableAarraySort } from "../src/index";
+import * as Sort from "../src/index";
 
 describe("testtest", () => {
   let subtable = [];
@@ -14,7 +14,13 @@ describe("testtest", () => {
   });
 
   test("test1", () => {
-    expect(subtableAarraySort(subtable).length).toBe(5);
+    expect(Sort.subtableAarraySort(subtable).length).toBe(5);
+  });
+
+  test("test2", () => {
+    expect(Sort.subtableAarraySort2(subtable).length).toBe(5);
+    let sorted = Sort.subtableAarraySort2(subtable);
+    expect(sorted[0].date).toBe("2020-07-20");
   });
 });
 
