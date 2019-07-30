@@ -33,7 +33,7 @@ export let subtableAarraySort2 = aray => {
 console.log(subtableAarraySort2(subtable));
 // function aaa(){}
 // bbb = function(){}
-let subtableMaxDate = subtable => {
+export let subtableMaxDate = subtable => {
   const MaxDate = new Date(
     Math.max.apply(
       null,
@@ -47,7 +47,7 @@ let subtableMaxDate = subtable => {
 };
 console.log(subtableMaxDate(subtable).toLocaleDateString());
 
-let subtableMaxDate2 = subtable => {
+export let subtableMaxDate2 = subtable => {
   const MaxDate = new Date(
     Math.max(
       ...subtable.map(row => {
